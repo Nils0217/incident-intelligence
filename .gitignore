@@ -1,0 +1,38 @@
+# Sensitive files
+client_secret.json
+gmail_token.pickle
+.env
+.env.local
+
+# Database
+incidents.db
+incidents.db-shm
+incidents.db-wal
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node/npm
+node_modules/
+package-lock.json
+npm-debug.log
+
+# OS
+.DS_Store
+.DS_Store?
+
+# Streamlit
+.streamlit/secrets.toml
