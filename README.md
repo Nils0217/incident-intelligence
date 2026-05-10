@@ -7,7 +7,7 @@ A Streamlit app that cleans messy incident reports, structures them into JSON, s
 ✅ **Demo-ready** - 3 built-in sample messy incidents (works immediately)  
 ✅ **Text + File Upload** - Paste text or upload .txt/.md/.log files  
 ✅ **Before/After View** - Side-by-side comparison of messy vs. clean data  
-✅ **Kimi 2.6 Integration** - Via Pipeshift API for intelligent cleaning  
+✅ **Google Gemma 4 26B A4B Instruct Integration** - Via Pipeshift API for intelligent cleaning  
 ✅ **Offline Mode** - Works without API key using smart mock cleaning  
 ✅ **SQLite Storage** - Zero-config local database  
 ✅ **Query Interface** - Natural language search (P0 incidents, system filters, tags)  
@@ -32,7 +32,7 @@ This launches the app in **demo mode** with 3 sample incidents pre-loaded. You c
 - Clean new reports using smart mock cleaning
 - Query the database
 
-### 3. (Optional) Enable Real Kimi 2.6 API
+### 3. (Optional) Enable Real Gemma 4 API
 
 If you have a Pipeshift API key:
 
@@ -41,7 +41,7 @@ export PIPESHIFT_API_KEY="your-key-here"
 streamlit run app.py
 ```
 
-The app will automatically use Kimi 2.6 instead of mock cleaning.
+The app will automatically use Gemma 4 instead of mock cleaning.
 
 ## How It Works
 
@@ -81,7 +81,7 @@ All incidents are normalized to this JSON structure:
 | Component | Technology | Cost |
 |-----------|-----------|------|
 | Frontend | Streamlit | Free |
-| LLM | Kimi 2.6 (Pipeshift) | Hackathon credits |
+| LLM | Gemma 4 (Pipeshift) | Hackathon credits |
 | Storage | SQLite | Free |
 | Language | Python 3.9+ | Free |
 
@@ -101,7 +101,7 @@ All incidents are normalized to this JSON structure:
 
 ## Environment Variables
 
-- `PIPESHIFT_API_KEY` - (Optional) Your Pipeshift API key for Kimi 2.6
+- `PIPESHIFT_API_KEY` - (Optional) Your Pipeshift API key for Gemma 4
 
 If not set, app runs in demo mode with mock cleaning.
 
@@ -133,4 +133,6 @@ streamlit run app.py
 
 ---
 
-**Built for speed.** Ready to ship. 🚀
+**Built for speed.** Ready to ship. 
+
+**Demo video link:** https://youtu.be/pqWz7vSEV8A
